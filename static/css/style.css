@@ -1,0 +1,724 @@
+@font-face {
+font-family: ApercuReg;
+src: url("../font/ApercuPro-Regular.otf") format("opentype");
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: ApercuReg;
+	width: 100%;
+	background-color: #fafafa;
+}
+
+/*****************************************************Header Section*****************************************************************/
+
+header{
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	z-index: 50;
+}
+
+.logo{
+	position: fixed;
+	float: left;
+	margin: 16px 60px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+nav{
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+nav ul{
+	list-style: none;
+	background: rgba(0,0,0,0);
+	overflow: hidden;
+	color: #fff;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	transition: 1s;
+}
+
+nav.black ul{
+	background: rgba(0,0,0,0.8);
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 20px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+}
+
+.menu-icon{
+	width: 100%;
+	background: #000;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 15px 24px;
+	cursor: pointer;
+	background: rgba(0,0,0,0.8);
+	display: none;
+}
+
+header .slider{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500%;
+	height: 100%;
+	float: left;
+	animation: animate 25s linear infinite;
+}
+
+header .slider .slide{
+	position: relative;
+	width: 20%;
+	height: 100%;
+	float: left;
+	box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+	text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .5);
+}
+
+header .slider .slide .caption{
+	position: absolute;
+	bottom: 60px;
+	left: 300px;
+	right: 300px;
+	padding: 30px;
+	background: rgba(0,0,0,.6);
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+
+header .slider .slide .caption h2{
+	margin: 0 0 20px;
+	padding: 0;
+	color: #fff;
+	font-size: 48px;
+	transition: 0.5s;
+}
+
+header .slider .slide .caption p{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 23px;
+	transition: 0.5s;
+}
+
+header .slider .slide.slide1{
+	background: url('../img/slide-glass.png');
+	background-size: cover;
+	background-position: center;
+}
+
+header .slider .slide.slide2{
+	background: url('../img/slide-mirror.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+header .slider .slide.slide3{
+	background: url('../img/slide-skinali.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+
+/***********************************************************Content**************************************************************************/
+
+#content{
+	width: 100%;
+	margin: 0 auto;
+}
+
+h1{
+	font-family: ApercuReg;
+	color: inherit;
+	line-height: 1.1;
+	padding-top: 10px;
+	font-size: 50px;
+	font-weight: 400;
+	text-align: center;
+	margin: 30px;
+	margin-bottom: 45px;
+}
+
+.info-g{
+	background: rgb(230,230,230);
+	margin-top: 20px;	
+	padding-top: 20px;
+}
+
+.info-w{
+	background: #fafafa;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+.about{
+	margin: 0 auto;
+	text-align: justify;
+	width: 70%;
+	font-size: 1rem;
+	font-family: ApercuReg;
+	padding-top: 10px;
+	padding-bottom: 60px;
+	color: #212529;
+	line-height: 1.5;
+}
+
+.wrapper{
+	max-width: 1150px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.col{
+	margin: 20px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	padding:0;
+	background: rgba(0,0,0,.8);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.col img{
+	width: 90%;
+	max-width: 100%;
+	height: 35%;
+	padding: 0;
+}
+
+.col-head{
+	text-align: center;
+	font-size: 1.5vw;
+	font-family: ApercuReg;
+	color: #fafafa;
+	font-weight: 800;
+	margin: 0;
+
+}
+
+.col-text{
+	text-align: justify;
+	font-size: 1vw;
+	font-family: ApercuReg;
+	color: #f3f3f3;
+	line-height: 1.3;
+	padding: 5%;
+	margin: 0;
+}
+
+.col ul{
+	text-align: justify;
+	font-size: 1vw;
+	font-family: ApercuReg;
+	color: #f3f3f3;
+	line-height: 1.3;
+	margin: 0;
+}
+
+.col-hr{
+	border: 0; 
+	margin: 1rem 0 0 0;
+	border-top: 1px solid rgba(255,255,255,.1);
+	box-sizing: content-box;
+}
+
+/**********************************************Section Glass and Mirror Image List***********************************************************************/
+
+.img-list-section{
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 6% 2%;
+	background: #fafafa;
+}
+
+.img-grid{
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+img-grid:after{
+	clear: both;
+}
+
+.img-grid:after, xop-box:before{
+	content: "";
+	display: table;
+}
+
+.img-grid li{
+	width: 328px;
+	height: 328px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.img-box{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+	border-radius: 10px;
+
+	-webkit-transition: 0.3s easy-in-out, -webkit-transform 0.3s ease-in-out;
+	-moz-transition: 0.3s easy-in-out, -moz-transform 0.3s ease-in-out;
+	transition: 0.3s easy-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.img-box:hover{
+	transform: scale(1.05);
+}
+
+.box-img-1{
+	background: url(../img/shelves.jpg);
+	background-size: cover;
+	background-position: center;	
+}
+
+.box-img-2{
+	background: url(../img/glass-door.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.box-img-3{
+	background: url(../img/shop-window.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.box-img-4{
+	background: url(../img/glass-skinali.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.box-img-5{
+	background: url(../img/partitions.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.box-img-6{
+	background: url(../img/table.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.box-img-7{
+	background: url(../img/baguette.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.box-img-8{
+	background: url(../img/panel.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.box-img-9{
+	background: url(../img/mir-door.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.box-img-10{
+	background: url(../img/decor.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.box-img-11{
+	background: url(../img/facet.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.box-img-12{
+	background: url(../img/mir-skinali.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img-info{
+	position: absolute;
+	width: inherit;
+	height: inherit;
+}
+
+.box-text{
+	font-family: ApercuReg;
+	font-weight: 200;
+	color: #fafafa;
+	font-size: 39px;
+	line-height: 2.1;
+	bottom: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	background: rgba(0, 0, 0, .6);
+	border-radius: 0 0 10px 10px;
+	box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+/**************************************************************Section our mirror***********************************************/
+
+#work {
+      font-family: ApercuReg;
+      font-size: 14px;
+      background: #262626;
+      padding: 0;
+}
+
+.swiper-container {
+     width: 100%;
+     padding-top: 106px;
+     padding-bottom: 50px;
+     color:#262626;
+     height: 450px;
+}
+
+.swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 375px;
+      background: #fff;
+}
+
+.swiper-slide .imgBx{
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+
+.swiper-slide .imgBx img{
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.swiper-slide .details{
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.swiper-slide .details h3{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	text-align: center;
+	line-height: 20px;
+	font-family: ApercuReg;
+}
+
+.swiper-slide .details h3 span{
+	font-size: 16px;
+	color: #f44336;
+}
+
+#work h1{
+	color: #fafafa;
+	padding-top: 70px;
+	margin: 0;
+	font-family: ApercuReg;
+}
+
+
+/********************************************************Contacts************************************************************************/
+
+.contact-info{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.map-section{
+	width: 60%;
+}
+
+.contact-section{
+	width: 40%;
+}
+
+.contact-form{
+	margin: 0 auto;
+	background: rgba(0,0,0,.8);
+	padding: 5%;
+	box-shadow: 0 0 10px rgba(0,0,0,.13);
+	box-sizing: border-box;
+	max-width: 90%;
+	height: 100%;
+}
+
+.contact-form h3{
+	color: #fafafa;
+	text-align: center;
+	font-family: ApercuReg;
+}
+
+.input-fields{
+	flex-direction: column;	
+}
+
+.input-fields, .msg{
+	width: 100%;
+}
+
+.input-fields, .inpute{
+	color: red;
+}
+.input, .msg textarea{
+	margin: 5% 0;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid #fafafa;
+	padding: 0 0 10px 0;
+	color: #fafafa;
+	width: 100%;
+}
+input[type="text"], input[type="email"]{
+	margin: 5% 0;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid #fafafa;
+	padding: 0 0 10px 0;
+	color: #fafafa;
+	width: 100%;
+}
+
+select{
+	margin: 5% 0;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid #fafafa;
+	padding: 0 0 10px 0;
+	color: #fafafa;
+}
+option{
+	color: black;
+}
+.msg textarea{
+	height: 10vw;
+}
+
+.order p{
+	color: #fafafa;
+	font-family: ApercuReg;
+}
+
+::-webkit-input-placeholder{
+	color:#fafafa;
+}
+::-moz-input-placeholder{
+	color:#fafafa;
+}
+
+::-ms-input-placeholder{
+	color:#fafafa;
+}
+
+.btn{
+	margin: 0 auto;
+	padding-left: 3%;
+	padding-top: 1%;
+	width: 70%;
+	height: 80%;
+}
+
+button{
+	background: none;
+	color: #ccc;
+	width: 100%;
+	height: 80%;
+	border: 1px solid #338033;
+	font-size: 18px;
+	border-radius: 4px;
+	transition: .6s;
+	overflow: hidden;
+	padding: 5%;
+}
+
+button:focus{
+	outline: none;
+}
+
+button:hover{
+	background: #338033;
+	cursor: pointer;
+}
+
+.google-maps {
+	position: relative;
+	padding-bottom: 76%; // This is the aspect ratio
+	height: 0;
+	overflow: hidden;
+	left:3%;
+}
+
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+
+/****************************************************************************Footer******************************************************************************************/
+
+.footer{
+	background: #262626;
+	width: 96%;
+	height: 120px;
+	top: 5px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.copyright{
+	float: left;
+	font-family: ApercuReg;
+    font-size: 14px;
+    position: relative;
+    padding-left: 3%;
+    padding-top: 2%;
+    color: #fafafa;
+}
+
+.foot-contact{
+	float: right;
+	font-family: ApercuReg;
+    font-size: 14px;
+    position: relative;
+    padding-right: 4%;
+    color: #fafafa;
+}
+
+/**************************************************************************Keyframes and Media************************************************************/
+
+@keyframes animate{
+	0%{
+		left: 0;
+	}
+	25%{
+		left: 0;
+	}
+	35%{
+		left: -100%;
+	}
+	60%{
+		left: -100%;
+	}
+	70%{
+		left: -200%;
+	}
+	93%{
+		left: -200%;
+	}
+	100%{
+		left: -300%;
+	}
+}
+
+@media(max-width: 900px){
+	.wrapper{
+		max-width: 430px;
+		flex-direction: column;
+	}
+
+	.col{
+		margin: 20px;
+		padding:20px;
+	  	align-items: center;
+	}
+
+	.col img{
+		max-width: 100%;
+		height: 10%;
+		display: block;
+	}
+
+	.col-head{
+		font-size: 1.8vw;
+	}
+
+	.col-text{
+		font-size: 1.4vw;
+	}
+
+	.col ul{
+		font-size: 1.4vw;
+	}
+}
+
+@media(max-width: 1100px){
+	.col{
+		margin: 10px;
+	}
+
+	header .slider .slide .caption{
+		bottom: 20px;
+		left: 50px;
+		right: 50px;
+		padding: 30px;
+	}
+
+	header .slider .slide .caption h2{
+		margin: 0 0 10px;
+		font-size: 30px;
+	}
+
+	header .slider .slide .caption p{
+		font-size: 16px;
+	}
+}
+
+@media(max-width: 1200px){
+	.logo{
+		position: fixed;
+		top: 0;
+		margin-top: 16px;
+	}
+
+	nav ul{
+		max-height: 0px;
+		background: rgba(0,0,0,0.8)
+	}
+
+	nav.black ul{
+		background: rgba(0,0,0,0.8)
+	}
+
+	.showing{
+		max-height: 30em;
+	}
+
+	nav ul li{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 24px 0;
+		text-align: center;
+	}
+
+	.menu-icon{
+		display: block;
+	}
+}
